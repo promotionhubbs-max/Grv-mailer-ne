@@ -2360,7 +2360,7 @@ export default {
       url.pathname === "/"
     ){
 
-      return html(
+      return new Response(
         APP_HTML
       );
 
