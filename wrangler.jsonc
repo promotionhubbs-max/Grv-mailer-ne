@@ -1,14 +1,18 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "grv-mailer-ne",
   "main": "index.js",
-  "compatibility_date": "2026-09-30",
-  "vars": {
-    "GOOGLE_CLIENT_ID": "506455144185-khil14t6vl1n93e0g16qm3l8e20dgni3.apps.googleusercontent.com"
-  },
+  "compatibility_date": "2026-10-03",
   "kv_namespaces": [
     {
       "binding": "GRV_KV",
       "id": "0ca6bd3c046d4794bee52ba09ffba1f2"
     }
-  ]
+  ],
+  "vars": {
+    "WORKER_HOST": "https://grv-mailer-ne.gauravsa01hu.workers.dev"
+  },
+  "triggers": {
+    "crons": ["* * * * *"]
+  }
 }
