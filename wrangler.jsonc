@@ -1,0 +1,14 @@
+{
+  "name": "grv-mailer-new",
+  "main": "index.js",
+  "compatibility_date": "2026-09-30",
+  "vars": {
+    "GOOGLE_CLIENT_ID": "506455144185-khil14t6vl1n93e0g16qm3l8e20dgni3.apps.googleusercontent.com"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "GRV_KV",
+      "id": "11cbe36cc408d4b41b720006a6983c3d2"
+    }
+  ]
+}
