@@ -1,0 +1,20 @@
+FRESH GRV MAILER DEPLOYMENT
+
+Included:
+1. index.js — complete OAuth + Gmail sender app
+2. wrangler.jsonc — new Worker name, Google Client ID, and NEW GRV_KV namespace
+3. README.md — setup notes
+
+IMPORTANT:
+- Do NOT put GOOGLE_CLIENT_SECRET in GitHub or this ZIP.
+- Add GOOGLE_CLIENT_SECRET as a Cloudflare Production Secret with the exact name:
+  GOOGLE_CLIENT_SECRET
+- The KV namespace is already configured as:
+  binding: GRV_KV
+- Do not manually add KV entries.
+
+Google OAuth redirect URI must be:
+https://YOUR-WORKER-DOMAIN/oauth/google/callback
+
+After uploading the files, deploy the Worker and then test:
+https://YOUR-WORKER-DOMAIN/
