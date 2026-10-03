@@ -2361,19 +2361,21 @@ export default {
     ){
 
       return new Response(
-        APP_HTML
-      );
-
+  APP_HTML,
+  {
+    headers: {
+      "content-type": "text/html;charset=UTF-8"
     }
-
-
-    return new Response(
-      "Not Found",
-      {
-        status:404
-      }
-    );
-
   }
+);
+        }
+ 
+return new Response(
+  "Not Found",
+  {
+    status: 404
+  }
+);
 
+}
 };
