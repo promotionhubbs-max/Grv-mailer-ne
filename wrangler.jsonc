@@ -1,0 +1,11 @@
+{
+  "name": "grv-mailer-ne",
+  "main": "index.js",
+  "compatibility_date": "2026-01-01",
+  "kv_namespaces": [
+    {
+      "binding": "GRV_KV",
+      "id": "0ca6bd3c046d4794bee52ba09ffba1f2"
+    }
+  ]
+}
